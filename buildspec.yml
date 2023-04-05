@@ -4,7 +4,7 @@ phases:
   build:
     commands:
     - echo "This is build phase... Zipping my lambda function"
-    - zip -r deployment_package.zip hello-world.mjs
+    - zip -r deployment_package.zip hello-world.js
   post_build:
     commands:
     - echo "Deploying to the Lambda"
