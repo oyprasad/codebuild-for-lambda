@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-    - echo "This is build phase... Zipping my lambda function"
+    - echo "This is build phase... Zipping my lambda functionn"
   #  - zip -r deployment_package.zip index.js
   post_build:
     commands:
