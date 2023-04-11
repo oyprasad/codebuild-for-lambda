@@ -13,7 +13,7 @@ phases:
     commands:
     - echo "Deploying to the Lambdaa"
    # - aws lambda update-function-code --function-name  lambda-manual --zip-file fileb://deployment_package.zip
-    - unzip -t *
+   # - unzip -t *
 artifacts:
   # type: zip
   # paths:
