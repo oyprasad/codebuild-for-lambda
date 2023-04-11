@@ -7,7 +7,7 @@ phases:
   #  - zip -r deployment_package.zip index.js
   post_build:
     commands:
-    - echo "Deploying to the Lambda"
+    - echo "Deploying to the Lambdaa"
    # - aws lambda update-function-code --function-name  lambda-manual --zip-file fileb://deployment_package.zip
 artifacts:
   # type: zip
