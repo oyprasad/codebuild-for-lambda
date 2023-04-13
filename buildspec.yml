@@ -3,19 +3,19 @@ version: 0.2
 phases:
   pre_build:
     commnads:
-    -  yum update -y
-    -  yum install unzip -y
+  #  -  yum update -y
+   # -  yum install unzip -y
   build:
     commands:
     - echo "This is build phase... Zipping my lambda functionn"
-  #  - zip -r deployment_package.zip index.js
+    - zip -r deployment_package.zip index.js
   post_build:
     commands:
     - echo "Deploying to the Lambdaa"
-   # - aws lambda update-function-code --function-name  lambda-manual --zip-file fileb://deployment_package.zip
+    - aws lambda update-function-code --function-name  lambda-manual --zip-file fileb://deployment_package.zip
    # - unzip -t *
 artifacts:
-  # type: zip
-  # paths:
-  files:
-    - '*'
+   type: zip
+   paths:
+  # files:
+     - '*'
