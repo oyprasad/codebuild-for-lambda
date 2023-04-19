@@ -8,7 +8,8 @@ phases:
   build:
     commands:
     - echo "This is build phase... Zipping my lambda functionn"
-    - zip -r deployment_package.zip aws s3 s3://prasad-test-bucket-check/source-code/
+    - aws s3 cp s3://test-node-js-bucket-ces/lambda-s3/ . --recursive
+    - zip -r deployment_package.zip *
   post_build:
     commands:
     - echo "Deploying to the Lambdaa"
